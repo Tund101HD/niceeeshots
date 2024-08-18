@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="160dp"
+    android:layout_height="180dp"
+    android:padding="10dp"
+    android:id="@+id/mapview_container"
+    >
+    <ImageView
+        android:layout_width="wrap_content"
+        android:minWidth="0dp"
+        android:layout_height="wrap_content"
+        android:minHeight="80dp"
+        android:maxHeight="140dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/mapview_imagecontainer"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mapview_imagecontainer"
+        android:text="User Post Image"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/mapview_title"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mapview_imagecontainer"
+        android:text="ImageID"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/mapview_hiddenatt"
+        android:visibility="gone"/>
+
+</RelativeLayout>

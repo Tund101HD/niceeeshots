@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_margin="15dp"
+    android:padding="15dp"
+    android:background="@drawable/ui_task_bg">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ui_register_title"
+        android:layout_centerHorizontal="true"
+        android:text="Register for NiceeShotss"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:layout_marginTop="10dp"
+        />
+
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/ui_register_usernametitle"
+        android:layout_centerHorizontal="true"
+        android:text="Username*"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textAlignment="textStart"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/ui_register_title"
+        />
+
+    <EditText
+        android:layout_width="320dp"
+        android:layout_height="40dp"
+        android:id="@+id/ui_register_usernameinput"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/ui_register_usernametitle"
+        android:textColorHint="@color/black"
+        android:hint="Please enter your username"
+        android:inputType="text"
+        android:textStyle="italic"
+        android:textSize="18sp"
+        android:layout_marginTop="3dp"
+        android:textColor="@color/black"
+        android:background="@drawable/ui_register_border"
+        android:textAlignment="center"/>
+
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/ui_register_fullnametitle"
+        android:layout_centerHorizontal="true"
+        android:text="Full Name*"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textAlignment="textStart"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/ui_register_usernameinput"
+        />
+
+    <EditText
+        android:layout_width="320dp"
+        android:layout_height="40dp"
+        android:textColor="@color/black"
+        android:id="@+id/ui_register_fullnameinput"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/ui_register_fullnametitle"
+        android:textColorHint="@color/black"
+        android:hint="Please enter your full name"
+        android:inputType="textPersonName"
+        android:textStyle="italic"
+        android:textSize="19sp"
+        android:layout_marginTop="3dp"
+        android:background="@drawable/ui_register_border"
+        android:textAlignment="center"/>
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ui_register_fullnameinput"
+        android:id="@+id/ui_register_email"
+        android:text="E-Mail*"
+        android:layout_centerHorizontal="true"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textAlignment="textStart"
+        android:layout_marginTop="20dp"
+        />
+    <EditText
+        android:layout_width="320dp"
+        android:layout_height="40dp"
+        android:textColor="@color/black"
+        android:id="@+id/ui_register_emailinput"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/ui_register_email"
+        android:hint="Please enter your E-mail"
+        android:textColorHint="@color/black"
+        android:inputType="textPersonName"
+        android:textStyle="italic"
+        android:textSize="18sp"
+        android:layout_marginTop="3dp"
+        android:background="@drawable/ui_register_border"
+        android:textAlignment="center"/>
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ui_register_emailinput"
+        android:id="@+id/ui_register_birth"
+        android:text="Date of Birth*"
+        android:layout_centerHorizontal="true"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textAlignment="textStart"
+        android:layout_marginTop="20dp"/>
+    <EditText
+        android:layout_width="320dp"
+        android:layout_height="40dp"
+        android:textColor="@color/black"
+        android:id="@+id/ui_register_birthinput"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/ui_register_birth"
+        android:hint="Please enter your date of birth (dd/mm/yy)"
+        android:textColorHint="@color/black"
+        android:focusable="false"
+        android:inputType="textPersonName"
+        android:textStyle="italic"
+        android:textSize="15sp"
+        android:layout_marginTop="3dp"
+        android:background="@drawable/ui_register_border"
+        android:textAlignment="center"/>
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ui_register_birthinput"
+        android:id="@+id/ui_register_job"
+        android:text="Current Experience*"
+        android:layout_centerHorizontal="true"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textAlignment="textStart"
+        android:layout_marginTop="20dp"/>
+    <Spinner
+        android:layout_width="320dp"
+        android:layout_height="40dp"
+        android:id="@+id/ui_register_jobinput"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/ui_register_job"
+        android:inputType="textPersonName"
+        android:textStyle="italic"
+        android:textSize="15sp"
+        android:layout_marginTop="3dp"
+        android:background="@drawable/ui_register_border" />
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ui_register_jobinput"
+        android:id="@+id/ui_register_pwd"
+        android:text="Password*"
+        android:layout_centerHorizontal="true"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textAlignment="textStart"
+        android:layout_marginTop="20dp"/>
+    <EditText
+        android:layout_width="320dp"
+        android:layout_height="40dp"
+        android:textColor="@color/black"
+        android:id="@+id/ui_register_pwdinput"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/ui_register_pwd"
+        android:hint="Please enter a password"
+        android:textColorHint="@color/black"
+        android:inputType="textPassword"
+        android:textStyle="italic"
+        android:textSize="18sp"
+        android:layout_marginTop="3dp"
+        android:background="@drawable/ui_register_border"
+        android:textAlignment="center"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/ui_register_terms"
+        android:layout_below="@id/ui_register_pwdinput"
+        android:text="By registering you accept our Terms of Service"
+        android:layout_marginTop="12dp"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/ui_register_registersumbit"
+        android:layout_below="@id/ui_register_terms"
+        android:text="Sign me up!"
+        android:layout_marginTop="20dp"
+        android:textSize="24sp"
+        android:textStyle="bold"/>
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone"
+        android:id="@+id/ui_register_progressbar"/>
+
+
+
+
+</RelativeLayout>

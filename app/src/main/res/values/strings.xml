@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">NiceeShotss</string>
+    <string-array name="register_selections">
+        <item>Beginner (Hobbyist)</item>
+        <item>Intermediate (Hobbyist)</item>
+        <item>Student</item>
+        <item>Professional</item>
+    </string-array>
+</resources>

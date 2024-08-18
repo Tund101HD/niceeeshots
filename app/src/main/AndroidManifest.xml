@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+    <uses-feature android:name="android.hardware.camera.autofocus"   android:required="true"/>
+    <uses-feature android:name="android.hardware.camera.any"  android:required="true" />
+    <uses-feature android:name="android.hardware.camera.capability.manual_post_processing" android:required="true"/>
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES"/>
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+    <application
+        android:allowBackup="true"
+        android:requestLegacyExternalStorage="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/ic_main"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/ic_main"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.NiceeShotss"
+        tools:targetApi="31">
+        <activity android:name=".LoginActivity" android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".RegisterFormActivity"/>
+        <activity android:name=".LoginFormActivity"/>
+        <activity android:name=".TasksViewActivity"/>
+        <activity android:name=".ProfileViewActivity"/>
+        <activity android:name=".utils.images.GallerySelectActivity"/>
+        <activity
+            android:name=".MainActivity">
+        </activity>
+    </application>
+
+</manifest>

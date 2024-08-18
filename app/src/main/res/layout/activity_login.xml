@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="15dp"
+    android:padding="15dp"
+    android:background="@drawable/ui_task_bg">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ui_login_logintext"
+        android:text="Welcome to NiceeShotss!"
+        android:textAlignment="center"
+        android:layout_marginTop="12dp"
+        android:textSize="24sp"
+        android:fontFamily="sans-serif-black"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ui_login_logintext2"
+        android:text="NiceeShotss is an app, focused on motivating people all over the world on creating wonderfull images and learn new skills in all types of photography and cinematography."
+        android:layout_below="@+id/ui_login_logintext"
+        android:textAlignment="center"
+        android:layout_marginTop="20dp"
+        android:textSize="20sp"
+        android:layout_centerHorizontal="true"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ui_login_lgbtn"
+        android:text="Login into NiceeShotss"
+        android:textAlignment="center"
+        android:layout_above="@id/ui_login_registerdesc"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="120dp"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:maxWidth="300dp"
+        android:onClick="onLoginClick"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ui_login_registerdesc"
+        android:text="If you don't have an account, please register:"
+        android:textAlignment="center"
+        android:layout_above="@id/ui_login_register"
+        android:layout_marginTop="8dp"
+        android:textSize="16sp"
+        android:fontFamily="sans-serif-black"
+        android:textStyle="italic"
+        android:layout_centerHorizontal="true"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ui_login_register"
+        android:text="Register"
+        android:textAlignment="center"
+        android:layout_alignParentBottom="true"
+
+        android:layout_marginTop="2dp"
+        android:textSize="16sp"
+        android:fontFamily="sans-serif-black"
+        android:textStyle="italic"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/purple"
+        android:onClick="onRegisterClick"
+        />
+
+
+</RelativeLayout>

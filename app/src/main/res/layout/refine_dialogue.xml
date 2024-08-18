@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_margin="8dp"
+    android:background="@drawable/ui_task_bg">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/dialog_infotext"
+            android:text="Please change the values as needed."
+            android:textStyle="bold"
+            android:textSize="20sp"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/dialog_infotext"
+            android:layout_marginTop="12dp"
+            android:text="ISO"
+            android:textSize="16sp"
+            android:id="@+id/dialog_ISO"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/dialog_ISO"
+            android:layout_marginTop="12dp"
+            android:text="Latitude"
+            android:textSize="16sp"
+            android:id="@+id/dialog_lat"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/dialog_lat"
+            android:layout_marginTop="12dp"
+            android:text="Longitude"
+            android:textSize="16sp"
+            android:id="@+id/dialog_long"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/dialog_long"
+            android:layout_marginTop="12dp"
+            android:text="Model"
+            android:textSize="16sp"
+            android:id="@+id/dialog_cam"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/dialog_cam"
+            android:layout_marginTop="12dp"
+            android:text="Exposure"
+            android:textSize="16sp"
+            android:id="@+id/dialog_exp"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/dialog_exp"
+            android:layout_centerHorizontal="true"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:text="Submit changes"
+            android:textSize="20sp"
+            android:id="@+id/dialog_submitrefine"/>
+    </RelativeLayout>
+
+
+</LinearLayout>

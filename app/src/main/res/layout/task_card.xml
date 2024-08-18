@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="10dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/ui_task_bg"
+        android:layout_centerHorizontal="true"
+        android:padding="10dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/ui_task_tasktitle"
+            android:text="Task_TITLE"
+            android:textSize="24sp"
+            android:textColor="@color/white"
+            android:layout_marginTop="2dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/ui_task_tasktitle"
+            android:id="@+id/ui_task_taskdescription"
+            android:text="LoremIpsumLoremIpsumLoremIpsumLoremIpsumLoremIpsumLoremIpsumLoremIpsumLoremIpsumLoremIpsum"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            android:layout_marginTop="5dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/ui_task_taskdescription"
+            android:id="@+id/ui_task_taskexp"
+            android:text="Exp: 10000"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            android:layout_marginTop="5dp"
+            android:paddingBottom="5dp"
+            android:textStyle="bold"/>
+
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

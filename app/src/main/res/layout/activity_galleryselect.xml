@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="17dp"
+    android:background="@drawable/ui_task_bg">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textSize="24sp"
+        android:text="Choose a picture"
+        android:id="@+id/gallery_choose"
+        />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="185dp"
+        android:minWidth="20dp"
+        android:id="@+id/gallery_preview"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/gallery_choose"
+        android:layout_marginTop="20dp"/>
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_below="@+id/gallery_preview"
+        android:id="@+id/gallery_cardview"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/ui_register_border"
+        android:visibility="gone"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="5dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Image Name: "
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:id="@+id/gallery_title_imgname"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Img_name.png"
+                android:textSize="15sp"
+                android:id="@+id/gallery_display_imgname"
+                android:layout_toRightOf="@+id/gallery_title_imgname"
+                android:layout_marginLeft="5dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Date of Creation: "
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:id="@+id/gallery_title_date"
+                android:layout_marginTop="2dp"
+                android:layout_below="@+id/gallery_title_imgname"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Date"
+                android:textSize="15sp"
+                android:id="@+id/gallery_display_date"
+                android:layout_toRightOf="@+id/gallery_title_date"
+                android:layout_below="@+id/gallery_title_imgname"
+                android:layout_marginLeft="5dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ISO: "
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:id="@+id/gallery_title_ISO"
+                android:layout_marginTop="2dp"
+                android:layout_below="@+id/gallery_title_date"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3000"
+                android:textSize="15sp"
+                android:id="@+id/gallery_display_ISO"
+                android:layout_toRightOf="@+id/gallery_title_date"
+                android:layout_below="@+id/gallery_title_date"
+                android:layout_marginLeft="5dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Focal Length: "
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:id="@+id/gallery_title_focal"
+                android:layout_marginTop="2dp"
+                android:layout_below="@+id/gallery_title_ISO"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="55 x 33 mm"
+                android:textSize="15sp"
+                android:id="@+id/gallery_display_focal"
+                android:layout_toRightOf="@+id/gallery_title_date"
+                android:layout_below="@+id/gallery_title_ISO"
+                android:layout_marginLeft="5dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Exposure: "
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:id="@+id/gallery_title_exp"
+                android:layout_marginTop="2dp"
+                android:layout_below="@+id/gallery_title_focal"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="20 sec"
+                android:textSize="15sp"
+                android:id="@+id/gallery_display_exp"
+                android:layout_toRightOf="@+id/gallery_title_date"
+                android:layout_below="@+id/gallery_title_focal"
+                android:layout_marginLeft="5dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Latitude: "
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:id="@+id/gallery_title_lat"
+                android:layout_marginTop="2dp"
+                android:layout_below="@+id/gallery_title_exp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="49.322121 N"
+                android:textSize="15sp"
+                android:id="@+id/gallery_display_lat"
+                android:layout_toRightOf="@+id/gallery_title_date"
+                android:layout_below="@+id/gallery_title_exp"
+                android:layout_marginLeft="5dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Longitude: "
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:id="@+id/gallery_title_long"
+                android:layout_marginTop="2dp"
+                android:layout_below="@+id/gallery_title_lat"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="22.322121 E"
+                android:textSize="15sp"
+                android:id="@+id/gallery_display_long"
+                android:layout_toRightOf="@+id/gallery_title_date"
+                android:layout_below="@+id/gallery_title_lat"
+                android:layout_marginLeft="5dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Zoom: "
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:id="@+id/gallery_title_fov"
+                android:layout_marginTop="2dp"
+                android:layout_below="@+id/gallery_title_long"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="10x"
+                android:textSize="15sp"
+                android:id="@+id/gallery_display_fov"
+                android:layout_toRightOf="@+id/gallery_title_date"
+                android:layout_below="@+id/gallery_title_long"
+                android:layout_marginLeft="5dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Camera: "
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:id="@+id/gallery_title_type"
+                android:layout_marginTop="2dp"
+                android:layout_below="@+id/gallery_title_fov"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="VOG-L29 (HUAWEI)"
+                android:textSize="15sp"
+                android:id="@+id/gallery_display_type"
+                android:layout_toRightOf="@+id/gallery_title_date"
+                android:layout_below="@+id/gallery_title_fov"
+                android:layout_marginLeft="5dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Image Size: "
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:id="@+id/gallery_title_size"
+                android:layout_marginTop="2dp"
+                android:layout_below="@+id/gallery_title_type"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1920 x 1080 (2 MP)"
+                android:textSize="15sp"
+                android:id="@+id/gallery_display_size"
+                android:layout_toRightOf="@+id/gallery_title_date"
+                android:layout_below="@+id/gallery_title_type"
+                android:layout_marginLeft="5dp"
+                />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Refine Information"
+                android:layout_below="@+id/gallery_display_size"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="12dp"
+                android:textSize="20sp"
+                android:id="@+id/gallery_refinebutton"/>
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit Image"
+        android:layout_below="@+id/gallery_cardview"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:textSize="20sp"
+        android:id="@+id/gallery_submit"
+        android:visibility="gone"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Remember that all this data is publicy visible!"
+        android:layout_below="@+id/gallery_submit"
+        android:id="@+id/gallery_submittext"
+        android:layout_centerHorizontal="true"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:visibility="gone"
+        />
+
+</RelativeLayout>
